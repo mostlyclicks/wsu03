@@ -22,19 +22,20 @@
    #myRoundabout a {display:block;height: 80px;width: 106px;} 
 </style> 
 <script>
-   $(document).ready(function() {
+   jQuery(document).ready(function() {
       $('ul#myRoundabout li').blur(function() {
       var index = $('ul#myRoundabout li').index(this) + 1;
       $('#c' + index).css('display','none');
       $('#r' + index).css('width','106px');
       $('#r' + index).css('height','80px');
       $('#r' + index).css('background-position','0px 0px');
+
       });
       $('ul#myRoundabout li').focus(function() {
       var index = $('ul#myRoundabout li').index(this) + 1;
       $('#c' + index).css('display','block');
-      $('.myContent-inner').css('display','block');
-      $('.myContent-inner').css('color','red');
+      // $('.myContent-inner').css('display','block');
+      // $('.myContent-inner').css('color','red');
 
       $('#r' + index).css('width','102px');
       $('#r' + index).css('height','76px');
@@ -89,8 +90,7 @@ function changeIframeSrc(id, url) {
     </div>
 
     <div class="col-md-2 yline no-padding"
-      style="position:relative;background:url(http://www.winona.edu/images/bg-arrow.png) no-repeat -0px 0px ;height:360px;"
-    ><!-- (wheel) styles="left:-10px; float:right;text-align:center;margin-left:-40px;border:1px solid red;"-->
+      style="position:relative;background:url(http://www.winona.edu/images/bg-arrow.png) no-repeat -0px 0px ;height:360px;"><!-- (wheel) extra styles="left:-10px; float:right;text-align:center;margin-left:-40px;border:1px solid red;"-->
 
       <a style="position:absolute; z-index: 10000; top: 12px; left: 42%; display:block;" href="#" id="previous"><img alt="Previous Feature" style="border:none;" src="http://www.winona.edu/images/arr-u.png" /></a>
       <ul id="myRoundabout">
