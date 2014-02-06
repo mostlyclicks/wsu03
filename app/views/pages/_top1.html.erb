@@ -90,17 +90,14 @@ function changeIframeSrc(id, url) {
 
     <div class="col-md-2 yline no-padding"
       style="position:relative;background:url(http://www.winona.edu/images/bg-arrow.png) no-repeat -0px 0px ;height:360px;"
-    ><!-- wheel 
-  left:-10px; float:right;text-align:center;margin-left:-40px;border:1px solid red;"
-
-  -->
+    ><!-- (wheel) styles="left:-10px; float:right;text-align:center;margin-left:-40px;border:1px solid red;"-->
 
       <a style="position:absolute; z-index: 10000; top: 12px; left: 42%; display:block;" href="#" id="previous"><img alt="Previous Feature" style="border:none;" src="http://www.winona.edu/images/arr-u.png" /></a>
       <ul id="myRoundabout">
-        <li id="r1" style="background:  url(images/Somson-Phelps-Thumbnail.png) no-repeat;"><a href="//www.winona.edu/"></a></li>
-        <li id="r2" style="background:  url(images/WSU-Unite-Survivors-Thumbnail.png) no-repeat;"><a href="//www.winona.edu/"></a></li>
-        <li id="r3" style="background:  url(images/Business_Students_Top_Rank_Thumbnail.png) no-repeat;"><a href="//www.winona.edu/"></a></li>
-        <li id="r4" style="background:  url(images/Alkire_Art_Thumbnail.png) no-repeat;"><a href="//www.winona.edu/"></a></li>
+        <li id="r1" style="background:  url(<%= asset_path 'Somson-Phelps-Thumbnail.png' %>) no-repeat;"><a href="//www.winona.edu/"></a></li>
+        <li id="r2" style="background:  url(<%= asset_path 'WSU-Unite-Survivors-Thumbnail.png' %>) no-repeat;"><a href="//www.winona.edu/"></a></li>
+        <li id="r3" style="background:  url(<%= asset_path 'Business_Students_Top_Rank_Thumbnail.png' %>) no-repeat;"><a href="//www.winona.edu/"></a></li>
+        <li id="r4" style="background:  url(<%= asset_path 'Alkire_Art_Thumbnail.png' %>) no-repeat;"><a href="//www.winona.edu/"></a></li>
       </ul> 
       <a style="position:absolute; z-index: 10000; top: 332px; left: 42%; display:block;" href="#" id="next"><img alt="Next Feature" style="border:none;" src="http://www.winona.edu/images/arr-d.png" /></a>
 
