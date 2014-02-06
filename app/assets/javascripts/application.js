@@ -14,6 +14,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require jquery.roundabout-shapes.min
-//= require jquery.roundabout.min
 //= require_tree .
