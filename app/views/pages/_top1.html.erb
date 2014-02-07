@@ -7,30 +7,13 @@
 </style>
 
 <style>
-/*   #myContent ul li {display:block;list-style: none; padding: 0; margin:0;}
-   #myContent div {display:none;}/*height:360px;*/
-   #myContent div {display:none;}/*height:360px;
-   /*#myContent div H1 {letter-spacing:-0.3px;color:#9277c6;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}*/
-   /*#myContent H1 {letter-spacing:-0.3px;color:#00afed ;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}*/
-   /*.round-copy {color: #ffffff;font:normal 12px/16px Arial, Helvetica, sans-serif;padding-bottom:15px;}*/
-   /*.round-links {color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}*/
-   /*.round-links a{color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}*/
-   /*.round-links a:link{color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}*/
-   /*.round-links a:hover{color: #cccccc;font:bold 12px/18px Arial, Helvetica, sans-serif;}*/
-   /*.roundabout-holder { padding: 0; width:110px; height: 360px; list-style: none; padding: 0; margin:0;}*/
-   /*.roundabout-moveable-item {height: 80px;width: 106px;cursor: pointer;background-color: #ffc;border: 0px solid #999;padding: 0; margin:0;}*/
-   /*.roundabout-in-focus { cursor: auto; border:solid 2px #ffffff; width:102px; height:76px;overflow:hidden;}*/
-   /*#myRoundabout a {display:block;height: 80px;width: 106px;} */
-</style> 
-
-<style>
    #myContent ul li {display:block;list-style: none; padding: 0; margin:0;}
-   /*#myContent div.row {display:none;}/*height:360px;*/*/
-   /*#myContent div .myContent-inner {display:block;border:1px solid blue;}*/
-   /*#myContent div {display:none;}/*height:360px;*/
+   #myContent div {display:none;}/*height:360px;
+   /*#myContent div.row {display:none;}/*height:360px;*/
    /*#myContent div H1 {letter-spacing:-0.3px;color:#9277c6;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}*/
    #myContent H1 {letter-spacing:-0.3px;color:#00afed ;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}
-   .myContent-inner h1 {color:#00afed;margin-top:70px;}
+   .myContent-inner h1 {color:#00afed;margin-top:0px;}
+   .myContent-inner img {margin-left:15px;}
    .round-copy {color: #ffffff;font:normal 12px/16px Arial, Helvetica, sans-serif;padding-bottom:15px;}
    .round-links {color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}
    .round-links a{color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}
@@ -47,16 +30,13 @@
    $(document).ready(function() {
       $('ul#myRoundabout li').blur(function() {
         var index = $('ul#myRoundabout li').index(this) + 1;
-        //cool(index)
         $('#c' + index).css('display','none');
         $('#r' + index).css('width','106px');
         $('#r' + index).css('height','80px');
         $('#r' + index).css('background-position','0px 0px');
       });
       $('ul#myRoundabout li').focus(function() {
-        //cool('inside focus')
         var index = $('ul#myRoundabout li').index(this) + 1;
-        //cool(index)
         $('#c' + index).css('display','block');
         $(".myContent-inner").css('display','block');
         $('#r' + index).css('width','102px');
@@ -98,7 +78,7 @@ function changeIframeSrc(id, url) {
 </script>
 
 <div class="col-md-12" style="padding:0 !important;">
-  <div class=""><!-- need row? -->
+  <div class="row" style="padding:0 !important;"><!-- need row? -->
 
     <div class="col-md-10" style="padding-bottom:0 !important;"><!-- content -->
       <ul id="myContent" class="no-padding" style="">
