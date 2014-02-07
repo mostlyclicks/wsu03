@@ -3,13 +3,31 @@
   .rline {border:1px solid red;}
   .gline {border:1px solid green;}
   .yline {border:1px solid yellow;}
-  .no-padding {padding:0;}
+  .no-padding {padding:0 !important;}
 </style>
 
 <style>
+/*   #myContent ul li {display:block;list-style: none; padding: 0; margin:0;}
+   #myContent div {display:none;}/*height:360px;*/
+   #myContent div {display:none;}/*height:360px;
+   /*#myContent div H1 {letter-spacing:-0.3px;color:#9277c6;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}*/
+   /*#myContent H1 {letter-spacing:-0.3px;color:#00afed ;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}*/
+   /*.round-copy {color: #ffffff;font:normal 12px/16px Arial, Helvetica, sans-serif;padding-bottom:15px;}*/
+   /*.round-links {color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}*/
+   /*.round-links a{color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}*/
+   /*.round-links a:link{color: #ffffff;font:bold 12px/18px Arial, Helvetica, sans-serif;}*/
+   /*.round-links a:hover{color: #cccccc;font:bold 12px/18px Arial, Helvetica, sans-serif;}*/
+   /*.roundabout-holder { padding: 0; width:110px; height: 360px; list-style: none; padding: 0; margin:0;}*/
+   /*.roundabout-moveable-item {height: 80px;width: 106px;cursor: pointer;background-color: #ffc;border: 0px solid #999;padding: 0; margin:0;}*/
+   /*.roundabout-in-focus { cursor: auto; border:solid 2px #ffffff; width:102px; height:76px;overflow:hidden;}*/
+   /*#myRoundabout a {display:block;height: 80px;width: 106px;} */
+</style> 
+
+<style>
    #myContent ul li {display:block;list-style: none; padding: 0; margin:0;}
-   #myContent div {display:block;}/*height:360px;*/
-   /*#myContent div {display:none;}/*height:360px;*/*/
+   /*#myContent div.row {display:none;}/*height:360px;*/*/
+   /*#myContent div .myContent-inner {display:block;border:1px solid blue;}*/
+   /*#myContent div {display:none;}/*height:360px;*/
    /*#myContent div H1 {letter-spacing:-0.3px;color:#9277c6;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}*/
    #myContent H1 {letter-spacing:-0.3px;color:#00afed ;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}
    .round-copy {color: #ffffff;font:normal 12px/16px Arial, Helvetica, sans-serif;padding-bottom:15px;}
@@ -22,37 +40,38 @@
    .roundabout-in-focus { cursor: auto; border:solid 2px #ffffff; width:102px; height:76px;overflow:hidden;}
    #myRoundabout a {display:block;height: 80px;width: 106px;} 
 </style> 
+
+
 <script>
    $(document).ready(function() {
       $('ul#myRoundabout li').blur(function() {
-      var index = $('ul#myRoundabout li').index(this) + 1;
-      $('#c' + index).css('display','none');
-      $('#r' + index).css('width','106px');
-      $('#r' + index).css('height','80px');
-      $('#r' + index).css('background-position','0px 0px');
-
+        var index = $('ul#myRoundabout li').index(this) + 1;
+        //cool(index)
+        $('#c' + index).css('display','none');
+        $('#r' + index).css('width','106px');
+        $('#r' + index).css('height','80px');
+        $('#r' + index).css('background-position','0px 0px');
       });
       $('ul#myRoundabout li').focus(function() {
-      var index = $('ul#myRoundabout li').index(this) + 1;
-      $('#c' + index).css('display','block');
-      // $('.myContent-inner').css('display','block');
-      // $('.myContent-inner').css('color','red');
-
-      $('#r' + index).css('width','102px');
-      $('#r' + index).css('height','76px');
-      $('#r' + index).css('background-position','-2px -2px');
+        //cool('inside focus')
+        var index = $('ul#myRoundabout li').index(this) + 1;
+        //cool(index)
+        $('#c' + index).css('display','block');
+        $(".myContent-inner").css('display','block');
+        $('#r' + index).css('width','102px');
+        $('#r' + index).css('height','76px');
+        $('#r' + index).css('background-position','-2px -2px');
       });
-      $('ul#myRoundabout').roundabout(
-      {
-      shape: 'waterWheel',
-      minOpacity: 0.8,
-      minScale: 1.0,
-      maxScale: 1.0,
-      startingChild: 3,
-      btnNext: '#next',
-      btnPrev: '#previous'
-      }
-      );
+      $('ul#myRoundabout').roundabout({
+        shape: 'waterWheel',
+        minOpacity: 0.8,
+        minScale: 1.0,
+        maxScale: 1.0,
+        startingChild: 3,
+        btnNext: '#next',
+        btnPrev: '#previous'
+      });
+      
 
    });                            
 </script> 
@@ -80,65 +99,70 @@ function changeIframeSrc(id, url) {
 <div class="col-md-12" style="padding:0 !important;">
   <div class=""><!-- need row? -->
 
-    <div class="col-md-10"><!-- content -->
-      <ul id="myContent" class="no-padding">
-        <!-- <div id="c1" class="row">
-          <div class="col-md-8 no-padding">
-            <%= image_tag 'Somsen-Phelps-Main.png', class: "img-responsive" %>
-          </div>
-          <div class="col-md-4 yline">  
-            <h1 style="margin-top:2em;">Historical Designation Highlights WSU Buildings</h1>
+    <div class="col-md-10" style="padding-bottom:0 !important;"><!-- content -->
+      <ul id="myContent" class="no-padding" style="">
+
+
+
+
+
+        <div id="c1" class="row" style="">
+          <div class="col-md-8 no-padding myContent-inner yline" style="display:block;"><%= image_tag 'Somsen-Phelps-Main.png', class: "img-responsive" %></div>
+          <div class="col-md-4 myContent-inner" style="display:block;">  
+            <h1 style="margin-top:1em;">Historical Designation Highlights WSU Buildings</h1>
               <p class="round-copy" style="">Two of the oldest buildings on the Winona State University campus, Somsen Hall and Phelps Hall, have been accepted into the National Register of Historic Places by the Minnesota Historical Society.</p>
-              <p class="round-links" style=";"><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+              <p class="round-links" style=""><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
           </div>
         </div>
 
         <div id="c2" class="row">
-          <div class="col-md-8 no-padding">
+          <div class="col-md-8 no-padding myContent-inner">
             <%= image_tag 'Somsen-Phelps-Main.png', class: "img-responsive" %>
           </div>
-          <div class="col-md-4 yline">  
+          <div class="col-md-4 myContent-inner">  
             <h1 style="margin-top:2em;">Historical Designation Highlights WSU Buildings</h1>
               <p class="round-copy" style="">Two of the oldest buildings on the Winona State University campus, Somsen Hall and Phelps Hall, have been accepted into the National Register of Historic Places by the Minnesota Historical Society.</p>
-              <p class="round-links" style=";"><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+              <p class="round-links" style=""><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
           </div>
         </div>
 
         <div id="c3" class="row">
-          <div class="col-md-8 no-padding">
+          <div class="col-md-8 no-padding myContent-inner">
             <%= image_tag 'Somsen-Phelps-Main.png', class: "img-responsive" %>
           </div>
-          <div class="col-md-4 yline">  
+          <div class="col-md-4 myContent-inner">  
             <h1 style="margin-top:2em;">Historical Designation Highlights WSU Buildings</h1>
               <p class="round-copy" style="">Two of the oldest buildings on the Winona State University campus, Somsen Hall and Phelps Hall, have been accepted into the National Register of Historic Places by the Minnesota Historical Society.</p>
-              <p class="round-links" style=";"><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+              <p class="round-links" style=""><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
           </div>
         </div>
- -->
-        <div id="c4" class="row">
-          <div class="col-md-8 no-padding">
+
+        <div id="c4" class="row" style="">
+          <div class="col-md-8 no-padding myContent-inner">
             <%= image_tag 'Somsen-Phelps-Main.png', class: "img-responsive" %>
           </div>
-          <div class="col-md-4 yline">  
+          <div class="col-md-4 myContent-inner">  
             <h1 style="margin-top:2em;">Historical Designation Highlights WSU Buildings</h1>
               <p class="round-copy" style="">Two of the oldest buildings on the Winona State University campus, Somsen Hall and Phelps Hall, have been accepted into the National Register of Historic Places by the Minnesota Historical Society.</p>
-              <p class="round-links" style=";"><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+              <p class="round-links" style=""><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
           </div>
         </div>
+
+
       </ul>
     </div>
 
     <div class="col-md-2 yline no-padding"
-      style="position:relative;background:url(http://www.winona.edu/images/bg-arrow.png) no-repeat -0px 0px ;height:360px;"><!-- (wheel) extra styles="left:-10px; float:right;text-align:center;margin-left:-40px;border:1px solid red;"-->
+      style="position:relative;background:url(http://www.winona.edu/images/bg-arrow.png) no-repeat -0px 0px ;height:360px;padding:0 45px;"><!-- (wheel) extra styles="left:-10px; float:right;text-align:center;margin-left:-40px;border:1px solid red;"-->
 
-      <a style="position:absolute; z-index: 10000; top: 12px; left: 42%; display:block;" href="#" id="previous"><img alt="Previous Feature" style="border:none;" src="http://www.winona.edu/images/arr-u.png" /></a>
+      <a style="position:absolute; z-index: 10000; top: 12px; left: 50%; display:block;" href="#" id="previous"><img alt="Previous Feature" style="border:none;" src="http://www.winona.edu/images/arr-u.png" /></a>
       <ul id="myRoundabout">
-        <li id="r1" style="background:url(<%= asset_path 'Somson-Phelps-Thumbnail.png' %>) no-repeat;"><a href="//www.winona.edu/"></a></li>
-        <li id="r2" style="background:url(<%= asset_path 'WSU-Unite-Survivors-Thumbnail.png' %>) no-repeat;"><a href="//www.winona.edu/"></a></li>
-        <li id="r3" style="background:url(<%= asset_path 'Business_Students_Top_Rank_Thumbnail.png' %>) no-repeat;"><a href="//www.winona.edu/"></a></li>
-        <li id="r4" style="background:url(<%= asset_path 'Alkire_Art_Thumbnail.png' %>) no-repeat;"><a href="//www.winona.edu/"></a></li>
+        <li id="r1" style="background:url(<%= asset_path 'Somson-Phelps-Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
+        <li id="r2" style="background:url(<%= asset_path 'WSU-Unite-Survivors-Thumbnail.png' %>) no-repeat;"><a href="/#"></a></li>
+        <li id="r3" style="background:url(<%= asset_path 'Business_Students_Top_Rank_Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
+        <li id="r4" style="background:url(<%= asset_path 'Alkire_Art_Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
       </ul> 
-      <a style="position:absolute; z-index: 10000; top: 332px; left: 42%; display:block;" href="#" id="next"><img alt="Next Feature" style="border:none;" src="http://www.winona.edu/images/arr-d.png" /></a>
+      <a style="position:absolute; z-index: 10000; top: 332px; left: 50%; display:block;" href="#" id="next"><img alt="Next Feature" style="border:none;" src="http://www.winona.edu/images/arr-d.png" /></a>
 
 
     </div>
