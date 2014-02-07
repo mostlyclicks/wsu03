@@ -17,3 +17,11 @@
 .navbar-nav .nav-pills > li > a {border:1px solid red;}
 .navbar {min-height:42px !important}
 /*ul.nav.nav-pills {height:40px;margin-bottom:0;}*/
+
+.tabbox {
+  background-image: url('../images/tabbox.png');
+background-repeat: repeat;
+padding-top: 11px;
+height: 264px;
+overflow: hidden;
+}
