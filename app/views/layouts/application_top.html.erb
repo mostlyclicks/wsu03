@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>   
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TODO: Add title back here. -->
+    <meta name="description" content="">
+    <link rel="alternate" type="application/rss+xml" title="Winona State University News Feed" href="http://winonastatenews.com/feed/">
+
+    <!-- Commented out for now, paths to png when we have those from Todd.
+    <link rel="apple-touch-icon" href="apple-touch-icon-152x152-precomposed.png">
+    <link rel="icon" href="path/to/favicon.png">
+    -->
+    <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+
+    <meta name="application-name" content="Winona State University">
+    <meta name="msapplication-TileColor" content="#401587">
+    <meta name="msapplication-square70x70logo" content="ie/tiny.png">
+    <meta name="msapplication-square150x150logo" content="ie/square.png">
+    <meta name="msapplication-wide310x150logo" content="ie/wide.png">
+    <meta name="msapplication-square310x310logo" content="ie/large.png">
+    <meta name="msapplication-notification" content="frequency=60;polling-uri=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=1;polling-uri2=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=2;polling-uri3=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=3;polling-uri4=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=4;polling-uri5=http://notifications.buildmypinnedsite.com/?feed=http://winonastatenews.com/feed/&amp;id=5; cycle=1">
+
+    <link href="http://xwebdev.winona.edu/webteam/zach/wsu.mainweb.templates/css/bootstrap.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- <link href="http://xwebdev.winona.edu/webteam/zach/wsu.mainweb.templates/css/offcanvas.css" rel="stylesheet"> -->
+    <link href="http://xwebdev.winona.edu/webteam/zach/wsu.mainweb.templates/css/wsustyles.css" rel="stylesheet">
+     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+      <%#= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+    <script type="text/javascript" src="http://www.winona.edu/Scripts/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="http://www.winona.edu/Scripts/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="http://www.winona.edu/Scripts/jquery-ui-1.7.1.custom.min.js"></script> 
+    <script type="text/javascript" src="http://www.winona.edu/Scripts/functions.js"></script>
+    
+
+    <script src="//ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.1.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="js/respond.js"></script>
+    <![endif]-->
+    <title>OT 7ab - Winona State University</title>
+</head>
+<body>
+          <!--alert container start-->
+        <!--alert container end-->    <noscript>
+        <div class="alert alert-danger text-center h4 noindex noscript-warning"><strong>Warning!</strong> Your browser does not support JavaScript, or it has been disabled. Therefore, this site may not work as intended.</div>
+    </noscript>
+
+    <!--[if lt IE 8]>
+         <div class="alert alert-warning text-center h4 noindex old-browser-warning">You're using an <strong>older version</strong> of this browser. For a better user experience <a href="http://browsehappy.com/" class="alert-link">upgrade your browser</a>.</div>
+    <![endif]-->
+    <div class="container wsu-container">
+        <!--top content start-->
+
+
+
+
+<%= yield %>
+
+
+
+
+
+
+
+        <!--[top content end]-->
+    </div>
+    <!--tab controller container start [bottom content]-->
+    <!--tab controller container end [bottom content]-->
+    <!--footer container start-->
+  <div id="wsu-footer" class="row">
+    <div class="container wsu-container-footer">
+        <div class="col-md-3 col-sm-4">
+            <h3><a href="http://www.winona.edu/admissions">Future Students</a></h3>
+            <p>
+                <a href="http://www.winona.edu/admissions/apply.asp">Apply</a><br>
+                <a href="http://www.winona.edu/admissions/visit.asp">Schedule a Visit</a><br>
+                <a href="http://www.winona.edu/financialaid/futurestudents.asp">Learn about financial aid</a><br>
+                <a href="http://winona.askadmissions.net/emtinterestpage.aspx?ip=request">Request information</a>
+            </p>
+        </div>
+        <div class="col-md-3 col-sm-4">
+            <h3><a href="http://www.winona.edu/community.asp">Winona State Alumni</a></h3>
+            <p>
+                <a href="http://www.winona.edu/registrar/transcriptsrequests.asp">Request a transcript</a><br>
+                <a href="http://www.winona.edu/career/alumni.asp">Connect with career services</a><br>
+                <a href="http://wsucurrents.wordpress.com/">Read <em>Currents</em> magazine</a><br>
+                <a href="http://www.alumni.winona.edu/netcommunity/page.aspx?pid=241">Learn about alumni events</a>
+            </p>
+        </div>
+        <div class="col-md-3 col-sm-4">
+            <h3><a href="http://www.winona.edu/community.asp">Community Members</a></h3>
+            <p>
+                <a href="https://w3.winona.edu/events">Attend an event</a><br>
+                <a href="http://www.winona.edu/facilities/roomreservations.asp">Reserve facilities</a><br>
+                <a href="http://winona.augusoft.net/index.cfm?fuseaction=1010">Take a non-credit class</a><br>
+                <a href="http://www.winona.edu/affirmaction/employment.asp">Employment opportunities</a>
+            </p>
+        </div>
+        <div id="sm4" class="col-md-3 col-sm-12">
+            <p>
+                <a href="https://winona.custhelp.com/">
+                    <img class="smicon" alt="Ask a question" src="http://www.winona.edu/images/icon-ask.png"></a><a class="smlink" href="https://winona.custhelp.com/">Ask a Question</a>
+            </p>
+            <p>
+                <a href="http://www.winona.edu/foundation">
+                    <img class="smicon" alt="Make a gift" src="http://www.winona.edu/images/icon-makeagift.png"></a><a class="smlink" href="http://xwebdev.winona.edu/foundation">Make a Gift</a>
+            </p>
+            <p>
+                <a href="http://www.winona.edu/socialmedia.asp">
+                    <img class="smicon" alt="Go to WSU Social Media" src="http://www.winona.edu/images/icon-socialmedia.png"></a><a class="smlink" href="http://xwebdev.winona.edu/socialmedia.asp">WSU Social Media</a>
+            </p>
+            <p>
+                <a href="https://mywsu.winona.edu/">
+                    <img class="smicon" alt="Go to WSU eHome" src="http://www.winona.edu/images/icon-ehome.png"></a><a class="smlink" href="https://mywsu.winona.edu/">WSU eHome</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div id="wsu-footer-global" class="row">
+    <div class="container wsu-container-footer-global">
+        <div class="col-md-2 col-sm-1">
+            <a href="http://www.winona.edu/">
+                <img src="http://www.winona.edu/brandimages/logo_graphic.png" alt="WSU" title="WSU">
+            </a>
+            <div id="wsu-social-foot" class="wsu-social pull-right visible-xs">
+                <a target="_blank" href="http://www.facebook.com/WinonaStateU">
+                    <img alt="Visit WSU on Facebook" src="http://www.winona.edu/images/smicon-fb.png">
+                </a>
+                <a target="_blank" href="http://www.winonastateu.com/">
+                    <img alt="Visit the WSU Blog" src="http://www.winona.edu/images/smicon-wp.png">
+                </a>
+                <a target="_blank" href="http://www.youtube.com/WinonaU">
+                    <img alt="Go to WSU on YouTube" src="http://www.winona.edu/images/smicon-yt.png">
+                </a>
+                <a target="_blank" href="https://twitter.com/winonastate">
+                    <img alt="@winonastate" src="http://www.winona.edu/images/smicon-tt.png">
+                </a>
+            </div>
+        </div>
+        <footer class="col-md-10 col-sm-11" role="contentinfo">
+            <address>
+                <a href="http://www.winona.edu">Winona State University</a> | P.O. Box 5838 | 175 West Mark Street | Winona, MN 55987 | <a href="tel:5074575000">507.457.5000</a> | <a href="tel:18003425978">1.800.342.5978</a><br>
+                The oldest member of the <a href="http://www.mnscu.edu/">Minnesota State Colleges and Universities System</a> | <a href="http://www.winona.edu/disclaimer.asp">Privacy</a> | <a href="mailto:webmaster@winona.edu">webmaster@winona.edu</a>
+            </address>
+        </footer>
+    </div>
+</div>
+
+    <!--footer container end-->
+
+      <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script-->
+
+      <script type="text/javascript" src="jquery/jquery-1.4.2.js"></script>
+        
+
+
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+      <script src="http://xwebdev.winona.edu/webteam/zach/wsu.mainweb.templates/js/site.js"></script>
+      <script type="text/javascript" src="http://www.winona.edu/scripts/jquery.roundabout.min.js"></script>
+      <script type="text/javascript" src="http://www.winona.edu/scripts/jquery.roundabout-shapes.min.js"></script>
+
+</body>
+</html>
+
