@@ -47,10 +47,12 @@ height: 264px;
 overflow: hidden;
 }
 
-
+#lower-nav {
+  margin-bottom:40px;
+}
 
 .buckets {
-  min-height:150px;border-radius:10px;padding:15px;position:relative;margin-bottom:10px;
+  min-height:175px;border-radius:10px;padding:15px;position:relative;margin-bottom:10px;
   h3 {
     margin-top:0;
     float:left;
@@ -78,12 +80,43 @@ overflow: hidden;
 
   button {
     position:absolute;
-    bottom:-19px;
+    bottom:-14px;
     left:140px;
     width:150px;
     text-transform: uppercase;
     border:none;
     text-shadow:1px 1px 1px 1px #000;
+  }
+}
+
+.bucket-event {
+  height:50px;
+  padding:6px 0px 6px 0;
+  margin:0 3px 0 3px;
+  border-bottom:1px dotted black;
+  font-size:12px;
+  a {
+    text-decoration:none;
+  }
+  .date {
+    font-size:10px;
+    border:1px solid #9a3c17 ;
+    margin-top:-4px;
+    text-transform: uppercase;
+    text-align:center;
+    line-height:1;
+    padding:2px;
+    color:#ffffff;
+    border-radius:4px;
+    span {
+      font-size:17px;
+    }
+    a {
+      color:#ffffff;
+      &:hover {
+        color:lighten(#9a3c17, 50%);
+      }
+    }
   }
 }
 
@@ -95,6 +128,14 @@ overflow: hidden;
   // animation: FADE-IN-BUCKET 1s;
   // -webkit-animation: FADE-IN-BUCKET 1s;
   
+}
+
+@-webkit-keyframes slidein {
+  100%  {left:0;}
+}
+
+@keyframes slidein {
+  100%  {left:0;}
 }
 
 // @-webkit-keyframes FADE-IN-BUCKET {
@@ -123,13 +164,7 @@ overflow: hidden;
 
 // }
 
-@-webkit-keyframes slidein {
-  100%  {left:0;}
-}
 
-@keyframes slidein {
-  100%  {left:0;}
-}
 
 .steel {
   color:#607883;}
