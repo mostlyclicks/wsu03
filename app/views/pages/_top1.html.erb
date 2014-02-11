@@ -27,7 +27,9 @@
 
 
 <script>
+  
    $(document).ready(function() {
+    
       $('ul#myRoundabout li').blur(function() {
         var index = $('ul#myRoundabout li').index(this) + 1;
         $('#c' + index).css('display','none');
@@ -53,8 +55,9 @@
         btnPrev: '#previous'
       });
       
+ 
+   });
 
-   });                            
 </script> 
 <script type="text/javascript">
 // <![CDATA[

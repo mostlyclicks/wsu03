@@ -4,7 +4,7 @@
 </style>
 
 
-<div class="container wsu-container tabbox" style="margin-top:-10px;min-height:200px;background:url(<%= asset_path 'tabbox.png' %>) 0 0 repeat;">
+<div class="container wsu-container tabbox" style="margin-top:-10px;min-height:200px;background:url(<%= asset_path 'tabbox.png' %>) 0 0 repeat;padding-right:0 !important;padding-left:0 !important;">
 
 <ul class="nav nav-tabs" id="myTab">
   <li class="active"><a class="lower-tabs" href="#spotlight" data-toggle="tab">Spotlight</a></li>
@@ -12,9 +12,78 @@
   <li><a class="lower-tabs" href="#events" data-toggle="tab">Events Calendar</a></li>
 </ul>
 
-<div class="tab-content" style="margin-left:-15px;margin-right:-15px;background-color:#ffffff;height:200px;">
-  <div class="tab-pane active" id="spotlight">Spotlight</div>
-  <div class="tab-pane" id="news">News</div>
+<div class="tab-content" id="lower-nav" style="background-color:#ffffff;min-height:300px;"><!-- margin-left:-15px;margin-right:-15px; -->
+  <div class="tab-pane active" id="spotlight">
+<div class="container" style="" id="lower-nav">
+    <div class="row" style="padding:20px 50px 0 50px;min-height:300px;">
+      <div class="col-md-4" >
+        <div class="col-12-md buckets">
+          <h3 class="steel">Snowshoe Showdown</h3>
+          <%= image_tag "OERC_small.png" %>
+          
+          <p>Join the Outdoor Education &amp; Recreation Center for snowshoeing, live music and prizes Feb. 9!</p>
+          <button class="btn btn-primary btn-sm btn-steel" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <div class="col-12-md buckets">
+          <h3 class="orange">Transfer to WSU</h3>
+          <%= image_tag 'WSU-2011-Smiling-Student-2-Small.png' %>
+          
+          <p>Academics. Technology. Sustainability. Health and wellness. Civic engagement. This is your opportunity to discover what matters.</p>
+          <button class="btn btn-primary btn-sm btn-orange">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <div class="col-12-md buckets">
+          <h3 class="green">Dancescape 2014</h3>
+          <%= image_tag 'dancescape_small.png' %>
+          
+          <p>Get your tickets for the 2014 Dancescape. Opening night is Feb. 13.</p>
+          <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- NEWS -->
+  <div class="tab-pane" id="news">
+    <div class="container" style="" id="lower-nav">
+    <div class="row" style="padding:20px 50px 0 50px;">
+      <div class="col-md-4" >
+        <div class="col-12-md buckets">
+          <h3 class="orange">Regional Emmy-Winner to Visit WSU</h3>
+         
+          
+          <p class="full">Winona State University will host a talk with Regional Emmy-Winning Filmmaker and WSU graduate Olga Lezhepekova at 4 p.m. Monday, Feb. 10, in Somsen ...</p>
+          <button class="btn btn-primary btn-sm btn-orange" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <div class="col-12-md buckets">
+          <h3 class="steel">CLASP: “Comparative Student Activism”</h3>
+          <%#= image_tag 'WSU-2011-Smiling-Student-2-Small.png' %>
+          
+          <p class="full">The Winona State University CLASP lecture series will host Professor Edward Guernica of the political science department for the presentation ...</p>
+          <button class="btn btn-primary btn-sm btn-steel">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <div class="col-12-md buckets">
+          <h3 class="green">Land Of Education</h3>
+          <%= image_tag '2010_Athenaeum_Small_button(1).PNG' %>
+          
+          <p>Join Professor Bruno Borsari and learn how WSU's campus can become a powerful tool for education Feb. 12.</p>
+          <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
   <div class="tab-pane" id="events">Events Calendar</div>
 </div>
 
