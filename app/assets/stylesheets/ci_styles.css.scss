@@ -88,29 +88,47 @@ overflow: hidden;
 }
 
 .buckets {
-  animation: FADE-IN-BUCKET 1s;
-  -webkit-animation: FADE-IN-BUCKET 1s;
+  
+  left:-1000px;
+  animation: slidein .5s forwards;
+  -webkit-animation: slidein .5s forwards;
+  // animation: FADE-IN-BUCKET 1s;
+  // -webkit-animation: FADE-IN-BUCKET 1s;
   
 }
 
-@-webkit-keyframes FADE-IN-BUCKET {
-  0%    {opacity:0;}
-  100%  {opacity:1;}
+// @-webkit-keyframes FADE-IN-BUCKET {
+//   0%    {opacity:0;}
+//   100%  {opacity:1;}
+  
+// }
+
+
+
+// @-moz-keyframes FADE-IN-BUCKET {
+//   0%    {opacity:0;}
+//   100%  {opacity:1;}
+
+// }
+
+// @-o-keyframes FADE-IN-BUCKET {
+//   0%    {opacity:0;}
+//   100%  {opacity:1;}
+
+// }
+
+// @keyframes FADE-IN-BUCKET {
+//   0%    {opacity:0;}
+//   100%  {opacity:1;}
+
+// }
+
+@-webkit-keyframes slidein {
+  100%  {left:0;}
 }
 
-@-moz-keyframes FADE-IN-BUCKET {
-  0%    {opacity:0;}
-  100%  {opacity:1;}
-}
-
-@-o-keyframes FADE-IN-BUCKET {
-  0%    {opacity:0;}
-  100%  {opacity:1;}
-}
-
-@keyframes FADE-IN-BUCKET {
-  0%    {opacity:0;}
-  100%  {opacity:1;}
+@keyframes slidein {
+  100%  {left:0;}
 }
 
 .steel {
