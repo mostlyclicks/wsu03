@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
-  layout 'application',  only: [:index, :tabs_working]
+  layout 'application',  only: [:index, :tabs_working, :index2]
   layout 'application_top', only: [:top_working]
-  layout 'application_2', only: [:index2]
+  #layout 'application', only: []
 
   def index
   end
