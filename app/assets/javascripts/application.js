@@ -13,7 +13,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-// require roundabout
-// require roundabout-shapes
+//= require roundabout
+//= require roundabout-shapes
 //= require turbolinks
 //= require_tree .
