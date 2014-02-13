@@ -1,6 +1,11 @@
+body {height:5000px;}
+
+.no-padding-left {padding-left:0;}
+
+
 #topPurple {
 
-  height:360px;
+  min-height:360px;
 }
 
 .hero-images {margin-left:-55px;border:1px solid red;}
@@ -60,11 +65,21 @@ overflow: hidden;
 }
 
 #lower-nav {
-  margin-bottom:40px;
+  margin-bottom:240px;
+  //border:1px solid red;
+  min-height:500px;
 }
 
+#lower-wrapper {
+  margin-top:-10px;min-height:900px;background:url('tabbox.png') 0 0 repeat;padding-right:0 !important;padding-left:0 !important;
+  
+}
+
+.nav-tabs {padding:0 88px 0 88px;}
+.nav-tabs li a {padding-left:3em;padding-right:3em;}
+
 .buckets {
-  min-height:175px;border-radius:10px;padding:15px;position:relative;margin-bottom:10px;
+  min-height:200px;border-radius:10px;padding:15px;position:relative;margin-bottom:10px;
   h3 {
     margin-top:0;
     float:left;
@@ -79,9 +94,16 @@ overflow: hidden;
     font-size:12px;
     line-height: 1.5em;
     float:left;
-    width:60%;
-    padding-left:10px;
+    min-height:100px;
+    // width:60%;
+    // padding-left:10px;
+    margin-top:0em;
+    padding:0 !important;
     color:#5c5959;
+//     -webkit-margin-before: 0em;
+// -webkit-margin-after: 0em;
+// -webkit-margin-start: 0px;
+// -webkit-margin-end: 0px;
 
   }
 
@@ -91,10 +113,10 @@ overflow: hidden;
     }
 
   button {
-    position:absolute;
-    bottom:-14px;
-    left:140px;
-    width:150px;
+    // position:absolute;
+    // bottom:0px;
+    // left:0px;
+    width:100%;
     text-transform: uppercase;
     border:none;
     text-shadow:1px 1px 1px 1px #000;
@@ -102,7 +124,7 @@ overflow: hidden;
 }
 
 .bucket-event {
-  height:50px;
+  min-height:50px;
   padding:6px 0px 6px 0;
   margin:0 3px 0 3px;
   border-bottom:1px dotted black;
@@ -141,6 +163,34 @@ overflow: hidden;
   // -webkit-animation: FADE-IN-BUCKET 1s;
   
 }
+
+// .nav-tabs {
+//   border:1px solid green;
+  
+// }
+
+// .nav-tabs > li {
+//     width:120px;
+//     font-size:11px;
+//     float:left;
+//     border:1px solid red;
+
+
+// }
+
+// .nav-tabs > li > a {
+//       padding:5px !important;
+// }
+
+// #myTab {
+  
+// }
+
+// #myTab li a {
+//   width:100%;
+//   border:1px solid blue;
+
+// }
 
 @-webkit-keyframes slidein {
   100%  {left:0;}

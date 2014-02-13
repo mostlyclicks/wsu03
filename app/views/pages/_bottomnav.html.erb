@@ -1,10 +1,11 @@
 <style>
-  .nav-tabs {padding:0 88px 0 88px;}
-  .nav-tabs li a {padding-left:3em;padding-right:3em;}
+/*  .nav-tabs {padding:0 88px 0 88px;}
+  .nav-tabs li a {padding-left:3em;padding-right:3em;}*/
 </style>
 
 
-<div class="container wsu-container tabbox" style="margin-top:-10px;min-height:200px;background:url(<%= asset_path 'tabbox.png' %>) 0 0 repeat;padding-right:0 !important;padding-left:0 !important;">
+<div class="container wsu-container tabbox" id="lower-wrapper" style="">
+  <!-- margin-top:-10px;min-height:200px;background:url(<%#= asset_path 'tabbox.png' %>) 0 0 repeat;padding-right:0 !important;padding-left:0 !important; -->
 
 <ul class="nav nav-tabs" id="myTab">
   <li class="active"><a class="lower-tabs" href="#spotlight" data-toggle="tab">Spotlight</a></li>
@@ -16,33 +17,64 @@
   <div class="tab-pane active" id="spotlight">
 <div class="container" style="" id="lower-nav">
     <div class="row" style="padding:20px 50px 0 50px;min-height:300px;">
+
       <div class="col-md-4" >
         <div class="col-12-md buckets">
-          <h3 class="steel">Snowshoe Showdown</h3>
-          <%= image_tag "OERC_small.png" %>
-          
-          <p>Join the Outdoor Education &amp; Recreation Center for snowshoeing, live music and prizes Feb. 9!</p>
-          <button class="btn btn-primary btn-sm btn-steel" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="steel">Snowshoe Showdown</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-5 col-sm-3 col-xs-4">
+              <%= image_tag "OERC_small.png", class: 'img-responsive' %>
+            </div>
+            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+              <p>Join the Outdoor Education &amp; Recreation Center for snowshoeing, live music and prizes Feb. 9!</p>
+              <button class="btn btn-primary btn-sm btn-steel" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="col-md-4" >
         <div class="col-12-md buckets">
-          <h3 class="orange">Transfer to WSU</h3>
-          <%= image_tag 'WSU-2011-Smiling-Student-2-Small.png' %>
-          
-          <p>Academics. Technology. Sustainability. Health and wellness. Civic engagement. This is your opportunity to discover what matters.</p>
-          <button class="btn btn-primary btn-sm btn-orange">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="orange">Transfer to WSU</h3>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-5 col-sm-3 col-xs-4">
+              <%= image_tag 'WSU-2011-Smiling-Student-2-Small.png', class: 'img-responsive'  %>
+            </div>
+            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+              <p>Academics. Technology. Sustainability. Health and wellness. Civic engagement. This is your opportunity to discover what matters.</p>
+              <button class="btn btn-primary btn-sm btn-orange">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
+            </div>
+          </div>   
         </div>
       </div>
+
       <div class="col-md-4" >
         <div class="col-12-md buckets">
-          <h3 class="green">Dancescape 2014</h3>
-          <%= image_tag 'dancescape_small.png' %>
-          
-          <p>Get your tickets for the 2014 Dancescape. Opening night is Feb. 13.</p>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="green">Dancescape 2014</h3>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-5 col-sm-3 col-xs-4">
+              <%= image_tag 'dancescape_small.png', class: 'img-responsive'  %>
+            </div>
+            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+              <p>Get your tickets for the 2014 Dancescape. Opening night is Feb. 13.</p>
           <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
+            </div>
+          </div>   
         </div>
       </div>
+
     </div>
   </div>
   </div>
@@ -69,15 +101,28 @@
           <button class="btn btn-primary btn-sm btn-steel">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
         </div>
       </div>
+
+
       <div class="col-md-4" >
         <div class="col-12-md buckets">
-          <h3 class="green">Land Of Education</h3>
-          <%= image_tag '2010_Athenaeum_Small_button(1).PNG' %>
-          
-          <p>Join Professor Bruno Borsari and learn how WSU's campus can become a powerful tool for education Feb. 12.</p>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="green">Land Of Education</h3>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-5 col-sm-3 col-xs-4">
+              <%= image_tag '2010_Athenaeum_Small_button(1).PNG', class: 'img-responsive'  %>
+            </div>
+            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+              <p>Join Professor Bruno Borsari and learn how WSU's campus can become a powerful tool for education Feb. 12.</p>
           <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
+            </div>
+          </div>   
         </div>
       </div>
+
+
     </div>
   </div>
   </div>
@@ -92,31 +137,31 @@
           <div class="row">
           <div class="col-md-6">
             <div class="row bucket-event">
-              <div class="col-md-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
-              <div class="col-md-10"><a href="#">"Student Civic Movements in Comparative Context" (2/12/2014)</a></div>
+              <div class="col-md-2 col-sm-1  col-xs-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="#">"Student Civic Movements in Comparative Context" (2/12/2014)</a></div>
             </div>
             <div class="row bucket-event">
-              <div class="col-md-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
-              <div class="col-md-10"><a href="#">Sustainable Living at WSU (2/12/2014)</a></div>
+              <div class="col-md-2 col-sm-1 col-xs-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="#">Sustainable Living at WSU (2/12/2014)</a></div>
             </div>
             <div class="row bucket-event" style="border:none;">
-              <div class="col-md-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
-              <div class="col-md-10"><a href="#">WSU International Students (2/13/2014)</a></div>
+              <div class="col-md-2 col-sm-1 col-xs-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="#">WSU International Students (2/13/2014)</a></div>
             </div>
 
           </div>
           <div class="col-md-6">
             <div class="row bucket-event">
-              <div class="col-md-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
-              <div class="col-md-10"><a href="#">Composite Materials Engineering Open House (2/15/2014)</a></div>
+              <div class="col-md-2 col-sm-1 col-xs-2  date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="#">Composite Materials Engineering Open House (2/15/2014)</a></div>
             </div>
             <div class="row bucket-event">
-              <div class="col-md-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
-              <div class="col-md-10"><a href="#">Common Book: Barry Estabrook (2/17/2014)</a></div>
+              <div class="col-md-2 col-sm-1 col-xs-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="#">Common Book: Barry Estabrook (2/17/2014)</a></div>
             </div>
             <div class="row bucket-event" style="border:none;">
-              <div class="col-md-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
-              <div class="col-md-10"><a href="#">WSU Ducks Unlimited 6th Annual Sportsman's Night Out (2/21/2014)</a></div>
+              <div class="col-md-2 col-sm-1  col-xs-2 date"><a href="#">Feb<br /><span>15</span><br />2014</a></div>
+              <div class="col-md-10 col-sm-11 col-xs-10"><a href="#">WSU Ducks Unlimited 6th Annual Sportsman's Night Out (2/21/2014)</a></div>
             </div>
            
           </div>
@@ -124,15 +169,27 @@
       </div>
       </div>
 
+
       <div class="col-md-4" >
         <div class="col-12-md buckets">
-          <h3 class="steel" style="border-bottom:1px dotted #cdcdcd;">Pump Up The Jams!</h3>
-          <%= image_tag '2012_Music_Dept_small_button.png' %>
-          
-          <p>Don't miss this year's spring concert with featured artist Timeflies! Public tickets available March 1.</p>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="steel" style="border-bottom:1px dotted #cdcdcd;">Pump Up The Jams!</h3>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-5 col-sm-3 col-xs-4">
+              <%= image_tag '2012_Music_Dept_small_button.png', class: 'img-responsive'  %>
+            </div>
+            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+              <p>Don't miss this year's spring concert with featured artist Timeflies! Public tickets available March 1.</p>
           <button class="btn btn-primary btn-sm btn-steel">View all events <i class="fa fa-chevron-circle-right"></i></button>
+            </div>
+          </div>   
         </div>
       </div>
+
+
     </div>
   </div>
 
