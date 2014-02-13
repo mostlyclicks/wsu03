@@ -89,11 +89,11 @@ function changeIframeSrc(id, url) {
 
 <div class="col-md-12" style="padding:0 !important;">
   <div class="row" style="padding:0 !important;">
-    <div class="col-md-7" style="min-height:360px;">
-      <div class="c1"><%= image_tag 'Somsen-Phelps-Main.png', class: "img-responsive" %></div>
-      <div class="c2"><%= image_tag 'WSU-Unites-Cancer-Survivors-Main.png', class: "img-responsive" %></div>
-      <div class="c3"><%= image_tag 'Business_Students_Top_Rank.png', class: "img-responsive" %></div>
-      <div class="c4"><%= image_tag 'Alkire_Art_Main.png', class: "img-responsive" %></div>
+    <div class="col-md-7 col-sm-12" style="min-height:360px;">
+      <div class="c1" style="display:none;"><%= image_tag 'Somsen-Phelps-Main.png', class: "img-responsive" %></div>
+      <div class="c2" style="display:none;"><%= image_tag 'WSU-Unites-Cancer-Survivors-Main.png', class: "img-responsive" %></div>
+      <div class="c3" style="display:none;"><%= image_tag 'Business_Students_Top_Rank.png', class: "img-responsive" %></div>
+      <div class="c4" style="display:none;"><%= image_tag 'Alkire_Art_Main.png', class: "img-responsive" %></div>
 
 
     </div>
@@ -144,7 +144,7 @@ function changeIframeSrc(id, url) {
 
 
 
-      <div class="col-md-12" style="position:absolute;top:250px;left:100px;" >
+      <div class="col-md-12" id="horz-roundabout"style="" >
         <a style="position:absolute; z-index: 10000; top:41px; right: 150px; display:block;" href="#" id="next"><i class="fa fa-chevron-circle-right" style="color:#ffffff;"></i><!-- img alt="Next Feature" style="border:none;" src="http://www.winona.edu/images/arr-d.png" /--></a>
         <ul id="myRoundabout" >
               <li id="r1" style="background:url(<%= asset_path 'Somson-Phelps-Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
