@@ -10,7 +10,7 @@
  *
  *= require_self
  *= require gradients
- * require wsu-responsive.css
+ *= require wsu-responsive.css
  *= require ci_styles
  *= require_tree .
  */
