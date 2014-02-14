@@ -1,21 +1,20 @@
 /* small devices (tablets) only */
 @media (min-width: 768px) and (max-width: 991px) {
-  body {border:3px solid red !important;}
+  /*body {border:3px solid red !important;}*/
+
+/* CI STYLES ************ START */
 
 #topPurple {
   height: 660px;  /*to prevent jump -- roundabout still jumps' */
-  border:1px solid orange !important;
 }
 
 .myContent-inner {
   width:640px;
-
   margin-left:38px;
 }
 
 .myContent-inner h1 {
   margin-top:-2em !important;
-
 }
 
 .c1 img, .c2 img, .c3 img, .c4 img {
@@ -29,7 +28,6 @@
 
 #horz-roundabout #myRoundabout li {
   width:102px !important;
-
 }
 
 #horz-roundabout #next {
@@ -48,8 +46,6 @@
   display:block !important;
 } 
 
-
-
 #mid-nav {
   background-image:none !important;
 }
@@ -57,8 +53,6 @@
 #mid-nav ul {
   margin-left:73px !important;
   font-size:10px !important;
-
-
 }
 
 #mid-nav .nav .navbar-nav {
@@ -70,31 +64,13 @@
   font-size:10px !important;
   padding:0 20px;
   color:red !important;
-
 }
 
 .buckets button {
   bottom:14px !important;
 }
 
-/*.nav-tabs {
-  border:1px solid green;
-  padding-left:0 !important;
-  
-}
-
-.nav-tabs > li {
-    width:120px;
-    font-size:11px;
-    float:left;
-    border:1px solid red;
-
-
-}
-
-.nav-tabs > li > a {
-      padding:5px !important;
-}*/
+/* CI STYLES ************ END */
 
 
 
@@ -129,22 +105,25 @@ ul.bs-docs-sidenav  {
 .wsu-colright {
   margin-left: 0%;
   width: 100%
-}
+  }
 }
 
 /* Small devices (tablets, 768px and under) */
 @media (max-width: 767px) {
-body {border:1px solid yellow !important;}
+/*body {border:5px solid yellow !important;}*/
 h1 {
   margin-top: 3px;
 }
+
+/* CI STYLES ************ START */
 
 #topPurple {
   max-height: 530px; /* to prevent jump -- roundabout still jumps' */
 }
 
 .myContent-inner h1 {
-  margin-top:-8em !important;
+  margin-top:0em !important;
+  padding-top:10px !important;
 }
 
 .buckets button {
@@ -156,6 +135,41 @@ h1 {
 .nav-tabs li {
   float:left;
 }
+
+.c1 img, .c2 img, .c3 img, .c4 img {
+  /*padding-top:25px !important;*/
+  /*padding-left:45px !important;*/
+  width:100%;
+}
+
+#horz-roundabout {
+  position:absolute;top:210px;left:20% !important;
+}
+
+#horz-roundabout #myRoundabout li {
+  width:102px !important;
+}
+
+#horz-roundabout #next {
+  position:absolute !important;
+  z-index: 10000 !important;
+  top:41px !important;
+  right: -49px !important;
+  display:block !important;
+}
+
+#horz-roundabout #previous {
+  position:absolute !important;
+  z-index: 10000 !important;
+  top:40px !important;
+  left: -53px !important;
+  display:block !important;
+} 
+
+
+
+
+/* CI STYLES ************ END */
 
 #wsu-footer br {
   display: none;
@@ -336,7 +350,7 @@ text-align: center;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {border:2px solid pink;}
+  /*body {border:2px solid pink;}*/
 
 #horz-roundabout {
   position:absolute;top:230px;left:13%;
@@ -367,7 +381,6 @@ text-align: center;
 }
 
 .myContent-inner {
-  border:1px solid red;
   margin-left:-20px;
 
 }
@@ -415,7 +428,7 @@ padding:10px 20px !important;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {border:1px solid purple;}
+  /*body {border:1px solid purple;}*/
 
 #horz-roundabout {
   position:absolute;top:230px;left:17% !important;
@@ -443,7 +456,6 @@ padding:10px 20px !important;
 } 
 
 .myContent-inner {
-  border:1px solid red;
   margin-left:-50px;
 }
 
