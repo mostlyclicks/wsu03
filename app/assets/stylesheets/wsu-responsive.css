@@ -166,6 +166,15 @@ h1 {
   display:block !important;
 } 
 
+#lower-wrapper {
+  padding-top:20px;
+  margin-top:10px;
+}
+
+.navbar-header button {
+  margin-top:2px;
+}
+
 
 
 
@@ -360,7 +369,7 @@ text-align: center;
 
 /* CI STYLES ************ START */
 
-  /*body {border:5px solid pink;}*/
+  body {border:5px solid pink;}
 
 #horz-roundabout {
   position:absolute;top:230px;left:13%;
@@ -406,7 +415,7 @@ text-align: center;
 }
 
 #lower-wrapper {
-  padding-top:20px;
+  padding-top:40px;
 }
 
 #mid-nav ul {
@@ -492,6 +501,10 @@ padding:10px 60px;
 #mid-nav .navbar-nav > li > a {
 padding:10px 40px !important;
 /*border:1px solid green;*/
+}
+
+#lower-wrapper {
+  padding-top:20px;
 }
 
 /* CI STYLES ************ END */
