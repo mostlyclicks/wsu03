@@ -299,10 +299,14 @@ padding-left:2px;*/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-/*body {border:1px solid red;}*/
+
 #wsu-resources {
   display: none !important;
 }
+
+/* CI STYLES ************ START */
+
+/*body {border:1px solid red;}*/
 
 #mid-nav ul {
   margin-right:0;
@@ -311,8 +315,6 @@ padding-left:2px;*/
 #mid-nav .navbar-nav > li > a {
 padding:10px 10px !important;
 font-weight:100;
-
-/*font-size:80%;*/
 }
 
 #mid-nav .navbar-text {
@@ -320,6 +322,11 @@ font-weight:100;
   padding-left:0;
 }
 
+#lower-wrapper {
+  padding-top:40px;
+}
+
+/* CI STYLES ************ END */
 
 #search {
   display: none !important;
@@ -350,7 +357,10 @@ text-align: center;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  /*body {border:2px solid pink;}*/
+
+/* CI STYLES ************ START */
+
+  /*body {border:5px solid pink;}*/
 
 #horz-roundabout {
   position:absolute;top:230px;left:13%;
@@ -391,15 +401,12 @@ text-align: center;
 
 }
 
-
-
 .myContent-inner h1 {
   padding-top:1em !important;
 }
 
-
-.navbar-default .navbar-nav > li > a {
-padding:10px 40px;
+#lower-wrapper {
+  padding-top:20px;
 }
 
 #mid-nav ul {
@@ -409,6 +416,12 @@ padding:10px 40px;
 #mid-nav .navbar-nav > li > a {
 padding:10px 20px !important;
 /*border:1px solid red;*/
+}
+
+/* CI STYLES ************ END */
+
+.navbar-default .navbar-nav > li > a {
+padding:10px 40px;
 }
 
 .wsu-resources {
@@ -428,6 +441,9 @@ padding:10px 20px !important;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+/* CI STYLES ************ START */
+
   /*body {border:1px solid purple;}*/
 
 #horz-roundabout {
@@ -478,6 +494,7 @@ padding:10px 40px !important;
 /*border:1px solid green;*/
 }
 
+/* CI STYLES ************ END */
 
 .wsu-container-footer {
   padding-left:40px;
