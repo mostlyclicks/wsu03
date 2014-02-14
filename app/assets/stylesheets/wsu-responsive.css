@@ -47,6 +47,7 @@
 } 
 
 #mid-nav {
+ 
   background-image:none !important;
 }
 
@@ -173,6 +174,15 @@ h1 {
 
 .navbar-header button {
   margin-top:2px;
+}
+
+#mid-nav {
+  position:relative;
+  z-index:19000;
+}
+
+#mid-nav #bs-example-navbar-collapse-1 {
+  background-color:#cdcdcd;
 }
 
 
