@@ -19,6 +19,7 @@ ul.nav {margin-left:-30px !important;}
   padding:10px 35px 10px 35px !important;
   text-decoration: none;
   color:#000000 !important;
+
 }
 .navbar-nav > li > a:hover {
   border-bottom:1px solid #cdcdcd;
@@ -95,16 +96,9 @@ overflow: hidden;
     line-height: 1.5em;
     float:left;
     min-height:100px;
-    // width:60%;
-    // padding-left:10px;
     margin-top:0em;
     padding:0 !important;
     color:#5c5959;
-//     -webkit-margin-before: 0em;
-// -webkit-margin-after: 0em;
-// -webkit-margin-start: 0px;
-// -webkit-margin-end: 0px;
-
   }
 
   .full {
@@ -155,42 +149,12 @@ overflow: hidden;
 }
 
 .buckets {
-  
   left:-1000px;
   animation: slidein .5s forwards;
-  -webkit-animation: slidein .5s forwards;
-  // animation: FADE-IN-BUCKET 1s;
-  // -webkit-animation: FADE-IN-BUCKET 1s;
-  
+  -webkit-animation: slidein .5s forwards;  
 }
 
-// .nav-tabs {
-//   border:1px solid green;
-  
-// }
 
-// .nav-tabs > li {
-//     width:120px;
-//     font-size:11px;
-//     float:left;
-//     border:1px solid red;
-
-
-// }
-
-// .nav-tabs > li > a {
-//       padding:5px !important;
-// }
-
-// #myTab {
-  
-// }
-
-// #myTab li a {
-//   width:100%;
-//   border:1px solid blue;
-
-// }
 
 @-webkit-keyframes slidein {
   100%  {left:0;}

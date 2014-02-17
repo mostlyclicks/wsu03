@@ -119,7 +119,7 @@ h1 {
 /* CI STYLES ************ START */
 
 #topPurple {
-  max-height: 530px; /* to prevent jump -- roundabout still jumps' */
+  max-height: 730px; /* to prevent jump -- roundabout still jumps' */
 }
 
 .myContent-inner h1 {
@@ -333,7 +333,7 @@ padding-left:2px;*/
 
 #mid-nav .navbar-nav > li > a {
 padding:10px 10px !important;
-font-weight:100;
+/*font-weight:100;*/
 }
 
 #mid-nav .navbar-text {
@@ -379,7 +379,7 @@ text-align: center;
 
 /* CI STYLES ************ START */
 
-  body {border:5px solid pink;}
+  /*body {border:5px solid pink;}*/
 
 #horz-roundabout {
   position:absolute;top:230px;left:13%;
