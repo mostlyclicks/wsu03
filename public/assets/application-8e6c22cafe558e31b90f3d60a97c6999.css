@@ -369,25 +369,65 @@ ul.nav {
 /* small devices (tablets) only */
 
 @media (min-width: 768px) and (max-width: 991px) {
-  body {border:1px solid green !important;}
+  body {border:8px solid blue !important;}
+
+/* CI STYLES ************ START */
 
 #topPurple {
-  /*max-height: 730px;  to prevent jump -- roundabout still jumps' */
+  height: 660px;  /*to prevent jump -- roundabout still jumps' */
+}
+
+.myContent-inner {
+  width:640px;
+  margin-left:38px;
 }
 
 .myContent-inner h1 {
-  margin-top:0em !important;
+  margin-top:-2em !important;
 }
 
+.c1 img, .c2 img, .c3 img, .c4 img {
+  padding-top:25px !important;
+  padding-left:53px !important;
+}
+
+#horz-roundabout {
+  position:relative;
+  margin:0 auto 0 auto;
+  left:33%;
+  /*position:absolute;
+  top:210px;
+  left:50% !important;*/
+}
+
+#horz-roundabout #myRoundabout li {
+  width:102px !important;
+}
+
+#horz-roundabout #next {
+  position:absolute !important;
+  z-index: 10000 !important;
+  top:41px !important;
+  left: 300px !important;
+  display:block !important;
+}
+
+#horz-roundabout #previous {
+  position:absolute !important;
+  z-index: 10000 !important;
+  top:40px !important;
+  left: -70px !important;
+  display:block !important;
+} 
+
 #mid-nav {
+ 
   background-image:none !important;
 }
 
 #mid-nav ul {
   margin-left:73px !important;
   font-size:10px !important;
-
-
 }
 
 #mid-nav .nav .navbar-nav {
@@ -399,31 +439,13 @@ ul.nav {
   font-size:10px !important;
   padding:0 20px;
   color:red !important;
-
 }
 
 .buckets button {
   bottom:14px !important;
 }
 
-/*.nav-tabs {
-  border:1px solid green;
-  padding-left:0 !important;
-  
-}
-
-.nav-tabs > li {
-    width:120px;
-    font-size:11px;
-    float:left;
-    border:1px solid red;
-
-
-}
-
-.nav-tabs > li > a {
-      padding:5px !important;
-}*/
+/* CI STYLES ************ END */
 
 
 
@@ -458,22 +480,25 @@ ul.bs-docs-sidenav  {
 .wsu-colright {
   margin-left: 0%;
   width: 100%
-}
+  }
 }
 
 /* Small devices (tablets, 768px and under) */
 @media (max-width: 767px) {
-body {border:1px solid yellow !important;}
+body {border:5px solid yellow !important;}
 h1 {
   margin-top: 3px;
 }
 
+/* CI STYLES ************ START */
+
 #topPurple {
-  max-height: 530px; /* to prevent jump -- roundabout still jumps' */
+  max-height: 710px !important; /* to prevent jump -- roundabout still jumps' */
 }
 
 .myContent-inner h1 {
-  margin-top:-8em !important;
+  margin-top:0em !important;
+  padding-top:10px !important;
 }
 
 .buckets button {
@@ -485,6 +510,79 @@ h1 {
 .nav-tabs li {
   float:left;
 }
+
+.c1 img, .c2 img, .c3 img, .c4 img {
+  /*padding-top:25px !important;*/
+  /*padding-left:45px !important;*/
+  width:100%;
+}
+
+.myContent-inner h1, .myContent-inner p {
+  padding:10px
+}
+
+#horz-roundabout {
+  /*position:absolute;top:210px;left:20% !important;*/
+  position:relative;
+   border-top:1px dotted black;
+  margin:25px auto 0 auto;
+  padding-top:5px;
+
+}
+
+#horz-roundabout ul {
+  position:absolute;
+  margin:0 auto 0 auto;
+
+}
+
+#horz-roundabout #myRoundabout li {
+  width:102px !important;
+
+}
+
+#horz-roundabout #next {
+
+  position:absolute !important;
+  right:5%;
+  top:40px;
+  z-index: 10001 !important;
+  /*top:41px !important;*/
+  /*right: -49px !important;*/
+  display:block !important;
+}
+
+#horz-roundabout #previous {
+  position:absolute !important;
+  /*z-index: 10000 !important;*/
+  /*top:40px !important;*/
+    top:40px;
+  left: 5% !important;
+  display:block !important;
+} 
+
+#lower-wrapper {
+  padding-top:20px;
+  margin-top:10px;
+}
+
+.navbar-header button {
+  margin-top:2px;
+}
+
+#mid-nav {
+  position:relative;
+  z-index:19000;
+}
+
+#mid-nav #bs-example-navbar-collapse-1 {
+  background-color:#cdcdcd;
+}
+
+
+
+
+/* CI STYLES ************ END */
 
 #wsu-footer br {
   display: none;
@@ -614,10 +712,14 @@ padding-left:2px;*/
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-/*body {border:1px solid red;}*/
+
 #wsu-resources {
   display: none !important;
 }
+
+/* CI STYLES ************ START */
+
+body {border:4px solid green;}
 
 #mid-nav ul {
   margin-right:0;
@@ -625,9 +727,7 @@ padding-left:2px;*/
 
 #mid-nav .navbar-nav > li > a {
 padding:10px 10px !important;
-font-weight:100;
-
-/*font-size:80%;*/
+/*font-weight:100;*/
 }
 
 #mid-nav .navbar-text {
@@ -635,6 +735,72 @@ font-weight:100;
   padding-left:0;
 }
 
+#lower-wrapper {
+  padding-top:40px;
+}
+
+#horz-roundabout {
+ 
+  position:relative;
+   
+  /*margin:0px auto 0 auto;*/
+  top:0px;
+  /*left:-400px;*/
+  /*margin-left:-122px;*/
+  margin-left:10px;
+  padding-top:5px;
+}
+
+
+/*
+#horz-roundabout {
+  border:1px solid red;
+  margin:0 auto 0 auto;
+}
+/*
+
+
+*/
+/*
+#horz-roundabout ul {
+  position:absolute;
+  margin:0 auto 0 auto;
+}
+*/
+/*
+#horz-roundabout #myRoundabout li {
+  width:102px !important;
+
+}
+*/
+#horz-roundabout #next {
+  
+  position:absolute !important;
+  /*right:20% !important;*/
+  top:49px;
+  z-index: 10001 !important;
+  right:-2px !important;
+  display:block !important;
+}
+/*
+#horz-roundabout #previous {
+  position:absolute !important;
+    top:40px;
+  left: 5% !important;
+  display:block !important;
+} 
+
+*/
+.c1 img, .c2 img, .c3 img, .c4 img {
+  /*padding-top:25px !important;*/
+  /*padding-left:45px !important;*/
+  /*width:100%;*/
+  margin-left:5px;
+
+}
+
+
+/* CI STYLES ************ END */
 
 #search {
   display: none !important;
@@ -665,7 +831,10 @@ text-align: center;
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  body {border:2px solid pink;}
+
+/* CI STYLES ************ START */
+
+  body {border:5px solid pink;}
 
 #horz-roundabout {
   position:absolute;top:230px;left:13%;
@@ -679,7 +848,7 @@ text-align: center;
   position:absolute !important;
   z-index: 10000 !important;
   top:35px !important;
-  right: 84px !important;
+  right: 98px !important;
   display:block !important;
 }
 
@@ -696,20 +865,22 @@ text-align: center;
 }
 
 .myContent-inner {
-  border:1px solid red;
   margin-left:-20px;
 
 }
 
+.c1 img, .c2 img, .c3 img, .c4 img {
+  padding-top:25px !important;
+  padding-left:20px !important;
 
+}
 
 .myContent-inner h1 {
   padding-top:1em !important;
 }
 
-
-.navbar-default .navbar-nav > li > a {
-padding:10px 40px;
+#lower-wrapper {
+  padding-top:40px;
 }
 
 #mid-nav ul {
@@ -719,6 +890,12 @@ padding:10px 40px;
 #mid-nav .navbar-nav > li > a {
 padding:10px 20px !important;
 /*border:1px solid red;*/
+}
+
+/* CI STYLES ************ END */
+
+.navbar-default .navbar-nav > li > a {
+padding:10px 40px;
 }
 
 .wsu-resources {
@@ -738,7 +915,10 @@ padding:10px 20px !important;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  body {border:1px solid purple;}
+
+/* CI STYLES ************ START */
+
+  body {border:4px solid purple;}
 
 #horz-roundabout {
   position:absolute;top:230px;left:17% !important;
@@ -753,7 +933,7 @@ padding:10px 20px !important;
   position:absolute !important;
   z-index: 10000 !important;
   top:41px !important;
-  right: 150px !important;
+  right: 165px !important;
   display:block !important;
 }
 
@@ -766,14 +946,19 @@ padding:10px 20px !important;
 } 
 
 .myContent-inner {
-  border:1px solid red;
   margin-left:-50px;
 }
 
 .myContent-inner h1 {
   margin-top:1.15em !important;
+}
+
+.c1 img, .c2 img, .c3 img, .c4 img {
+  padding-top:0px !important;
+  padding-left:0px !important;
 
 }
+
 .navbar-default .navbar-nav > li > a {
 padding:10px 60px;
 }
@@ -783,6 +968,11 @@ padding:10px 40px !important;
 /*border:1px solid green;*/
 }
 
+#lower-wrapper {
+  padding-top:20px;
+}
+
+/* CI STYLES ************ END */
 
 .wsu-container-footer {
   padding-left:40px;

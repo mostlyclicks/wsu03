@@ -1,6 +1,6 @@
 /* small devices (tablets) only */
 @media (min-width: 768px) and (max-width: 991px) {
-  /*body {border:3px solid red !important;}*/
+  body {border:8px solid blue !important;}
 
 /* CI STYLES ************ START */
 
@@ -23,7 +23,12 @@
 }
 
 #horz-roundabout {
-  position:absolute;top:210px;left:50% !important;
+  position:relative;
+  margin:0 auto 0 auto;
+  left:33%;
+  /*position:absolute;
+  top:210px;
+  left:50% !important;*/
 }
 
 #horz-roundabout #myRoundabout li {
@@ -34,7 +39,7 @@
   position:absolute !important;
   z-index: 10000 !important;
   top:41px !important;
-  right: -62px !important;
+  left: 300px !important;
   display:block !important;
 }
 
@@ -111,7 +116,7 @@ ul.bs-docs-sidenav  {
 
 /* Small devices (tablets, 768px and under) */
 @media (max-width: 767px) {
-/*body {border:5px solid yellow !important;}*/
+body {border:5px solid yellow !important;}
 h1 {
   margin-top: 3px;
 }
@@ -119,7 +124,7 @@ h1 {
 /* CI STYLES ************ START */
 
 #topPurple {
-  max-height: 730px; /* to prevent jump -- roundabout still jumps' */
+  max-height: 710px !important; /* to prevent jump -- roundabout still jumps' */
 }
 
 .myContent-inner h1 {
@@ -143,27 +148,47 @@ h1 {
   width:100%;
 }
 
+.myContent-inner h1, .myContent-inner p {
+  padding:10px
+}
+
 #horz-roundabout {
-  position:absolute;top:210px;left:20% !important;
+  /*position:absolute;top:210px;left:20% !important;*/
+  position:relative;
+   border-top:1px dotted black;
+  margin:25px auto 0 auto;
+  padding-top:5px;
+
+}
+
+#horz-roundabout ul {
+  position:absolute;
+  margin:0 auto 0 auto;
+
 }
 
 #horz-roundabout #myRoundabout li {
   width:102px !important;
+
 }
 
 #horz-roundabout #next {
+
   position:absolute !important;
-  z-index: 10000 !important;
-  top:41px !important;
-  right: -49px !important;
+  right:5%;
+  top:40px;
+  z-index: 10001 !important;
+  /*top:41px !important;*/
+  /*right: -49px !important;*/
   display:block !important;
 }
 
 #horz-roundabout #previous {
   position:absolute !important;
-  z-index: 10000 !important;
-  top:40px !important;
-  left: -53px !important;
+  /*z-index: 10000 !important;*/
+  /*top:40px !important;*/
+    top:40px;
+  left: 5% !important;
   display:block !important;
 } 
 
@@ -325,7 +350,7 @@ padding-left:2px;*/
 
 /* CI STYLES ************ START */
 
-/*body {border:1px solid red;}*/
+body {border:4px solid green;}
 
 #mid-nav ul {
   margin-right:0;
@@ -344,6 +369,67 @@ padding:10px 10px !important;
 #lower-wrapper {
   padding-top:40px;
 }
+
+#horz-roundabout {
+ 
+  position:relative;
+   
+  /*margin:0px auto 0 auto;*/
+  top:0px;
+  /*left:-400px;*/
+  /*margin-left:-122px;*/
+  margin-left:10px;
+  padding-top:5px;
+}
+
+
+/*
+#horz-roundabout {
+  border:1px solid red;
+  margin:0 auto 0 auto;
+}
+/*
+
+
+*/
+/*
+#horz-roundabout ul {
+  position:absolute;
+  margin:0 auto 0 auto;
+}
+*/
+/*
+#horz-roundabout #myRoundabout li {
+  width:102px !important;
+
+}
+*/
+#horz-roundabout #next {
+  
+  position:absolute !important;
+  /*right:20% !important;*/
+  top:49px;
+  z-index: 10001 !important;
+  right:-2px !important;
+  display:block !important;
+}
+/*
+#horz-roundabout #previous {
+  position:absolute !important;
+    top:40px;
+  left: 5% !important;
+  display:block !important;
+} 
+
+*/
+.c1 img, .c2 img, .c3 img, .c4 img {
+  /*padding-top:25px !important;*/
+  /*padding-left:45px !important;*/
+  /*width:100%;*/
+  margin-left:5px;
+
+}
+
 
 /* CI STYLES ************ END */
 
@@ -379,7 +465,7 @@ text-align: center;
 
 /* CI STYLES ************ START */
 
-  /*body {border:5px solid pink;}*/
+  body {border:5px solid pink;}
 
 #horz-roundabout {
   position:absolute;top:230px;left:13%;
@@ -393,7 +479,7 @@ text-align: center;
   position:absolute !important;
   z-index: 10000 !important;
   top:35px !important;
-  right: 84px !important;
+  right: 98px !important;
   display:block !important;
 }
 
@@ -463,7 +549,7 @@ padding:10px 40px;
 
 /* CI STYLES ************ START */
 
-  /*body {border:1px solid purple;}*/
+  body {border:4px solid purple;}
 
 #horz-roundabout {
   position:absolute;top:230px;left:17% !important;
@@ -478,7 +564,7 @@ padding:10px 40px;
   position:absolute !important;
   z-index: 10000 !important;
   top:41px !important;
-  right: 150px !important;
+  right: 165px !important;
   display:block !important;
 }
 
