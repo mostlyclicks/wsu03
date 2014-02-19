@@ -1,6 +1,6 @@
 /* small devices (tablets) only */
 @media (min-width: 768px) and (max-width: 991px) {
-  body {border:8px solid blue !important;}
+  /*body {border:3px solid blue !important;}*/
 
 /* CI STYLES ************ START */
 
@@ -76,6 +76,11 @@
   bottom:14px !important;
 }
 
+#lower-wrapper {
+  margin-top:10px;
+  
+}
+
 /* CI STYLES ************ END */
 
 
@@ -116,7 +121,7 @@ ul.bs-docs-sidenav  {
 
 /* Small devices (tablets, 768px and under) */
 @media (max-width: 767px) {
-body {border:5px solid yellow !important;}
+/*body {border:1px solid yellow !important;}*/
 h1 {
   margin-top: 3px;
 }
@@ -127,19 +132,55 @@ h1 {
   max-height: 710px !important; /* to prevent jump -- roundabout still jumps' */
 }
 
+#mid-nav {
+  background-image:none;
+}
+
+#mid-nav .nav > li {
+  
+  width:100%;
+  left:20px;
+
+}
+
 .myContent-inner h1 {
   margin-top:0em !important;
   padding-top:10px !important;
 }
 
-.buckets button {
-  bottom:14px !important;
+.buckets {
+  width:100%;
 }
 
-.nav-tabs {font-size:10px;}
-.nav-tabs li a {padding-left:6px !important;padding-right:6px !important;}
+.buckets button {
+  bottom:14px !important;
+
+}
+
+#lower-nav {
+  margin-top:27px;
+  /*padding:20px 50px 0 50px;*/
+  /*padding:20px;*/
+  /*background-position-y:40px;*/
+}
+
+
+
+.lower-tabs {padding:0;}
+/*.lower-wrapper #myTab li a {width:100px !important;border:1px solid blue;}*/
+/*.lower-tabs li:first-child {margin-left:9px;}*/
+#lower-wrapper {padding:4px;position:relative;}
+
+#myTab {position:absolute;left:38px;top:10px;width:98%;}
+
+.nav-tabs {font-size:11px;
+  padding:0;margin-left:21px;}
+.nav-tabs ul {}
+#lower-wrapper .nav-tabs li {width:33.0%;}
+#lower-wrapper .nav-tabs li a {padding-left:0px !important;padding-right:0px !important;text-align:center;margin-right:1px;}
+.nav-tabs li.active a {}
 .nav-tabs li {
-  float:left;
+  /*float:left;*/
 }
 
 .c1 img, .c2 img, .c3 img, .c4 img {
@@ -155,7 +196,7 @@ h1 {
 #horz-roundabout {
   /*position:absolute;top:210px;left:20% !important;*/
   position:relative;
-   border-top:1px dotted black;
+  /*border-top:1px dotted black;*/
   margin:25px auto 0 auto;
   padding-top:5px;
 
@@ -350,7 +391,7 @@ padding-left:2px;*/
 
 /* CI STYLES ************ START */
 
-body {border:4px solid green;}
+/*body {border:4px solid green;}*/
 
 #mid-nav ul {
   margin-right:0;
@@ -367,65 +408,28 @@ padding:10px 10px !important;
 }
 
 #lower-wrapper {
-  padding-top:40px;
+  padding-top:20px;
 }
 
 #horz-roundabout {
  
   position:relative;
-   
-  /*margin:0px auto 0 auto;*/
   top:0px;
-  /*left:-400px;*/
-  /*margin-left:-122px;*/
   margin-left:10px;
   padding-top:5px;
 }
 
 
-/*
-#horz-roundabout {
-  border:1px solid red;
-  margin:0 auto 0 auto;
-}
-/*
-
-
-*/
-/*
-#horz-roundabout ul {
-  position:absolute;
-  margin:0 auto 0 auto;
-}
-*/
-/*
-#horz-roundabout #myRoundabout li {
-  width:102px !important;
-
-}
-*/
 #horz-roundabout #next {
   
   position:absolute !important;
-  /*right:20% !important;*/
   top:49px;
   z-index: 10001 !important;
   right:-2px !important;
   display:block !important;
 }
-/*
-#horz-roundabout #previous {
-  position:absolute !important;
-    top:40px;
-  left: 5% !important;
-  display:block !important;
-} 
 
-*/
 .c1 img, .c2 img, .c3 img, .c4 img {
-  /*padding-top:25px !important;*/
-  /*padding-left:45px !important;*/
-  /*width:100%;*/
   margin-left:5px;
 
 }
@@ -465,7 +469,7 @@ text-align: center;
 
 /* CI STYLES ************ START */
 
-  body {border:5px solid pink;}
+  /*body {border:5px solid pink;}*/
 
 #horz-roundabout {
   position:absolute;top:230px;left:13%;
@@ -511,7 +515,7 @@ text-align: center;
 }
 
 #lower-wrapper {
-  padding-top:40px;
+  padding-top:20px;
 }
 
 #mid-nav ul {
@@ -549,7 +553,7 @@ padding:10px 40px;
 
 /* CI STYLES ************ START */
 
-  body {border:4px solid purple;}
+  /*body {border:4px solid purple;}*/
 
 #horz-roundabout {
   position:absolute;top:230px;left:17% !important;
