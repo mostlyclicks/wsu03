@@ -8,9 +8,7 @@
 
 <style>
    #myContent ul li {display:block;list-style: none; padding: 0; margin:0;}
-   #myContent div {display:none;}/*height:360px;
-   /*#myContent div.row {display:none;}/*height:360px;*/
-   /*#myContent div H1 {letter-spacing:-0.3px;color:#9277c6;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}*/
+   #myContent div {display:none;}/*height:360px;*/
    #myContent H1 {letter-spacing:-0.3px;color:#00afed ;font:bold 24px/26px Arial, Helvetica, sans-serif;padding-top:65px;padding-bottom:15px;}
    .myContent-inner h1 {color:#00afed;margin-top:0px;}
    .myContent-inner img {margin-left:15px;}
@@ -81,12 +79,6 @@ function changeIframeSrc(id, url) {
 </script>
 
 
-
-
-
-
-
-
 <div class="col-md-12" style="padding:0 !important;">
   <div class="row" style="padding:0 !important;">
     <div class="col-md-7 col-sm-12" style="">
@@ -99,76 +91,55 @@ function changeIframeSrc(id, url) {
     <div class="col-md-5 col-sm-12" style="height:360px;position:relative;">
       <div class="col-md-12 " style="">
 
-
         <ul id="myContent" class="no-padding" style="">
         
-         <div class="c1" class="row " style="">
-          
-          <div class=" myContent-inner" style=""> 
-
-            <h1>Historical Designation Highlights WSU Buildings</h1>
-              <p class="round-copy" style="">Two of the oldest buildings on the Winona State University campus, Somsen Hall and Phelps Hall, have been accepted into the National Register of Historic Places by the Minnesota Historical Society.</p>
-              <p class="round-links" style=""><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+          <div class="c1" class="row " style="">
+            <div class=" myContent-inner" style=""> 
+              <h1>Historical Designation Highlights WSU Buildings</h1>
+                <p class="round-copy" style="">Two of the oldest buildings on the Winona State University campus, Somsen Hall and Phelps Hall, have been accepted into the National Register of Historic Places by the Minnesota Historical Society.</p>
+                <p class="round-links" style=""><a href="http://winonastatenews.com/4977/wsu-buildings-named-to-national-register/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+            </div>
           </div>
-        </div>
 
-        <div class="c2" class="row">
-      
-          <div class=" myContent-inner">  
-            <h1 style="">Supporting Cancer Survivors</h1>
+          <div class="c2" class="row">
+            <div class=" myContent-inner">  
+              <h1 style="">Supporting Cancer Survivors</h1>
               <p class="round-copy" style="">WSU will again partner with Gundersen Lutheran and Winona Health to offer &quot;Winona Survivors Unite in Exercise.&quot; The program pairs undergraduate Movement Science students with cancer survivors, helping them gain strength, endurance and flexibility.</p>
               <p class="round-links" style=""><a href="http://winonastatenews.com/4995/winona-survivors-unite-in-exercise/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+            </div>
           </div>
-        </div>
 
-        <div class="c3" class="row">
-   
-          <div class=" myContent-inner"> 
-
-            
-            <h1 style="">Business Students Receive Top Ranking</h1>
+          <div class="c3" class="row">
+            <div class=" myContent-inner"> 
+              <h1 style="">Business Students Receive Top Ranking</h1>
               <p class="round-copy" style="">WSU business administration student teams earned top rankings in the 2013 Marketplace Live Tournament. The tournament provides participants with a realistic experience in managing an entire international firm and the opportunity to gain insight into the…</p>
               <p class="round-links" style=""><a href="http://winonastatenews.com/4988/business-students-receive-top-rankings/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+            </div>
           </div>
-        </div>
 
-        <div class="c4" class="row" style="">
-
-          <div class=" myContent-inner">  
-            <h1 style="">Professor Named Emerging Artist</h1>
+          <div class="c4" class="row" style="">
+            <div class=" myContent-inner">  
+              <h1 style="">Professor Named Emerging Artist</h1>
               <p class="round-copy" style="">WSU art instructor Kjellgren Alkire has been named the recipient of the 2013-14 Jerome Foundation Fellowship for Emerging Artists. Alkire is one of five recipients selected by a panel of art professionals.</p>
               <p class="round-links" style=""><a href="http://winonastatenews.com/5008/alkire-named-emerging-artist/">Read More</a> <i class="fa fa-chevron-circle-right"></i></p>
+            </div>
           </div>
+
+        </ul>
+
+        <div class="col-md-12 col-sm-4" id="horz-roundabout" style="" >
+          <a style="" href="#" id="next"><i class="fa fa-chevron-circle-right" style="color:#ffffff;"></i></a>
+          <ul id="myRoundabout" >
+            <li id="r1" style="background:url(<%= asset_path 'Somson-Phelps-Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
+            <li id="r2" style="background:url(<%= asset_path 'WSU-Unite-Survivors-Thumbnail.png' %>) no-repeat;"><a href="/#"></a></li>
+            <li id="r3" style="background:url(<%= asset_path 'Business_Students_Top_Rank_Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
+            <li id="r4" style="background:url(<%= asset_path 'Alkire_Art_Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
+          </ul> 
+          <a style="" href="#" id="previous"><i class="fa fa-chevron-circle-left" style="color:#ffffff;"></i></a>
         </div>
 
-      </ul>
-
-
-
-
-      <div class="col-md-12 col-sm-4" id="horz-roundabout" style="" >
-        <a style="" href="#" id="next"><i class="fa fa-chevron-circle-right" style="color:#ffffff;"></i></a>
-        <ul id="myRoundabout" >
-              <li id="r1" style="background:url(<%= asset_path 'Somson-Phelps-Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
-              <li id="r2" style="background:url(<%= asset_path 'WSU-Unite-Survivors-Thumbnail.png' %>) no-repeat;"><a href="/#"></a></li>
-              <li id="r3" style="background:url(<%= asset_path 'Business_Students_Top_Rank_Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
-              <li id="r4" style="background:url(<%= asset_path 'Alkire_Art_Thumbnail.png' %>) no-repeat;"><a href="#"></a></li>
-
-        </ul> 
-        <a style="" href="#" id="previous"><i class="fa fa-chevron-circle-left" style="color:#ffffff;"></i><!-- img alt="Next Feature" style="border:none;" src="http://www.winona.edu/images/arr-d.png" /--></a>
       </div>
-
-      
-      </div>
-
-
-
     </div>
-
   </div>
-
-
-
-
 </div>
 

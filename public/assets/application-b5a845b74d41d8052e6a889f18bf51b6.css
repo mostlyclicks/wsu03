@@ -177,9 +177,6 @@
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8774b', endColorstr='#9a3c17',GradientType=0 );
   /* IE6-9 */ }
-body {
-  height: 5000px; }
-
 .no-padding-left {
   padding-left: 0; }
 
@@ -238,7 +235,6 @@ ul.nav {
 .navbar {
   min-height: 42px !important; }
 
-/*ul.nav.nav-pills {height:40px;margin-bottom:0;}*/
 .nav-tabs > li > a {
   color: #301b56;
   text-decoration: none;
@@ -267,18 +263,11 @@ ul.nav {
 
 .tabbox {
   background-image: url("../images/tabbox.png");
-  background-repeat: repeat;
-  padding-top: 11px;
-  height: 264px;
-  overflow: hidden; }
-
-#lower-nav {
-  margin-bottom: 240px;
-  min-height: 500px; }
+  background-repeat: no-repeat;
+  padding-top: 11px; }
 
 #lower-wrapper {
   margin-top: -10px;
-  min-height: 900px;
   background: url("tabbox.png") 0 0 repeat;
   padding-right: 0 !important;
   padding-left: 0 !important; }
@@ -296,29 +285,34 @@ ul.nav {
   padding: 15px;
   position: relative;
   margin-bottom: 10px; }
-  .buckets h3 {
-    margin-top: 0;
-    float: left;
-    width: 100%; }
-  .buckets img {
-    display: block;
-    float: left; }
-  .buckets p {
-    font-size: 12px;
-    line-height: 1.5em;
-    float: left;
-    min-height: 100px;
-    margin-top: 0em;
-    padding: 0 !important;
-    color: #5c5959; }
-  .buckets .full {
-    width: 100% !important;
-    padding-left: 0px; }
-  .buckets button {
-    width: 100%;
-    text-transform: uppercase;
-    border: none;
-    text-shadow: 1px 1px 1px 1px #000; }
+
+.buckets h3 {
+  margin-top: 0;
+  float: left;
+  width: 100%; }
+
+.buckets img {
+  display: block;
+  float: left; }
+
+.buckets p {
+  font-size: 12px;
+  line-height: 1.5em;
+  float: left;
+  min-height: 100px;
+  margin-top: 0em;
+  padding: 0 !important;
+  color: #5c5959; }
+
+.buckets .full {
+  width: 100% !important;
+  padding-left: 0px; }
+
+.buckets button {
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  text-shadow: 1px 1px 1px 1px #000; }
 
 .bucket-event {
   min-height: 50px;
@@ -326,24 +320,29 @@ ul.nav {
   margin: 0 3px 0 3px;
   border-bottom: 1px dotted black;
   font-size: 12px; }
-  .bucket-event a {
-    text-decoration: none; }
-  .bucket-event .date {
-    font-size: 10px;
-    border: 1px solid #9a3c17;
-    margin-top: -4px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    padding: 2px;
-    color: #ffffff;
-    border-radius: 4px; }
-    .bucket-event .date span {
-      font-size: 17px; }
-    .bucket-event .date a {
-      color: #ffffff; }
-      .bucket-event .date a:hover {
-        color: #f5cbbb; }
+
+.buckets a {
+  text-decoration: none; }
+
+.buckets .date {
+  font-size: 10px;
+  border: 1px solid #9a3c17;
+  margin-top: -4px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  padding: 2px;
+  color: #ffffff;
+  border-radius: 4px; }
+
+.buckets .date span {
+  font-size: 17px; }
+
+.buckets .date a {
+  color: #ffffff; }
+
+.buckets .date a:hover {
+  color: #f5cbbb; }
 
 .buckets {
   left: -1000px;
@@ -395,9 +394,6 @@ ul.nav {
   position:relative;
   margin:0 auto 0 auto;
   left:33%;
-  /*position:absolute;
-  top:210px;
-  left:50% !important;*/
 }
 
 #horz-roundabout #myRoundabout li {
@@ -506,10 +502,8 @@ h1 {
 }
 
 #mid-nav .nav > li {
-  
   width:100%;
   left:20px;
-
 }
 
 .myContent-inner h1 {
@@ -523,21 +517,15 @@ h1 {
 
 .buckets button {
   bottom:14px !important;
-
 }
 
 #lower-nav {
   margin-top:27px;
-  /*padding:20px 50px 0 50px;*/
-  /*padding:20px;*/
-  /*background-position-y:40px;*/
 }
 
 
 
 .lower-tabs {padding:0;}
-/*.lower-wrapper #myTab li a {width:100px !important;border:1px solid blue;}*/
-/*.lower-tabs li:first-child {margin-left:9px;}*/
 #lower-wrapper {padding:4px;position:relative;}
 
 #myTab {position:absolute;left:38px;top:10px;width:98%;}
@@ -549,7 +537,6 @@ h1 {
 #lower-wrapper .nav-tabs li a {padding-left:0px !important;padding-right:0px !important;text-align:center;margin-right:1px;}
 .nav-tabs li.active a {}
 .nav-tabs li {
-  /*float:left;*/
 }
 
 .c1 img, .c2 img, .c3 img, .c4 img {
@@ -563,18 +550,14 @@ h1 {
 }
 
 #horz-roundabout {
-  /*position:absolute;top:210px;left:20% !important;*/
   position:relative;
-  /*border-top:1px dotted black;*/
   margin:25px auto 0 auto;
   padding-top:5px;
-
 }
 
 #horz-roundabout ul {
   position:absolute;
   margin:0 auto 0 auto;
-
 }
 
 #horz-roundabout #myRoundabout li {
@@ -583,21 +566,16 @@ h1 {
 }
 
 #horz-roundabout #next {
-
   position:absolute !important;
   right:5%;
   top:40px;
   z-index: 10001 !important;
-  /*top:41px !important;*/
-  /*right: -49px !important;*/
   display:block !important;
 }
 
 #horz-roundabout #previous {
   position:absolute !important;
-  /*z-index: 10000 !important;*/
-  /*top:40px !important;*/
-    top:40px;
+  top:40px;
   left: 5% !important;
   display:block !important;
 } 
@@ -768,7 +746,6 @@ padding-left:2px;*/
 
 #mid-nav .navbar-nav > li > a {
 padding:10px 10px !important;
-/*font-weight:100;*/
 }
 
 #mid-nav .navbar-text {

@@ -1,11 +1,5 @@
-<style>
-/*  .nav-tabs {padding:0 88px 0 88px;}
-  .nav-tabs li a {padding-left:3em;padding-right:3em;}*/
-</style>
-
 
 <div class="container wsu-container tabbox" id="lower-wrapper" style="">
-  <!-- margin-top:-10px;min-height:200px;background:url(<%#= asset_path 'tabbox.png' %>) 0 0 repeat;padding-right:0 !important;padding-left:0 !important; -->
 
 <ul class="nav nav-tabs" id="myTab">
   <li class="active"><a class="lower-tabs" href="#spotlight" data-toggle="tab">Spotlight</a></li>
@@ -13,119 +7,115 @@
   <li><a class="lower-tabs" href="#events" data-toggle="tab">Events Calendar</a></li>
 </ul>
 
-<div class="tab-content" id="lower-nav" style="background-color:#ffffff;min-height:300px;"><!-- margin-left:-15px;margin-right:-15px; -->
+<div class="tab-content" id="lower-nav" style="background-color:#ffffff;"><!-- margin-left:-15px;margin-right:-15px; min-height:300px; -->
+  
+  <!-- SPOTLIGHT -->
   <div class="tab-pane active" id="spotlight">
-<div class="container" style="" id="lower-nav">
-    <div class="row" style="padding-top:10px;">
-      <!-- padding:20px 50px 0 50px; -->
+    <div class="container" style="" id="lower-nav">
+      <div class="row" style="padding-top:10px;">
 
-      <div class="col-md-4" >
-        <div class="col-12-md buckets">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="steel">Snowshoe Showdown</h3>
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="steel">Snowshoe Showdown</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 col-sm-3 col-xs-4">
+                <%= image_tag "OERC_small.png", class: 'img-responsive' %>
+              </div>
+              <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+                <p>Join the Outdoor Education &amp; Recreation Center for snowshoeing, live music and prizes Feb. 9!</p>
+                <button class="btn btn-primary btn-sm btn-steel" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-5 col-sm-3 col-xs-4">
-              <%= image_tag "OERC_small.png", class: 'img-responsive' %>
-            </div>
-            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
-              <p>Join the Outdoor Education &amp; Recreation Center for snowshoeing, live music and prizes Feb. 9!</p>
-              <button class="btn btn-primary btn-sm btn-steel" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
-            </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="orange">Transfer to WSU</h3>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-md-5 col-sm-3 col-xs-4">
+                <%= image_tag 'WSU-2011-Smiling-Student-2-Small.png', class: 'img-responsive'  %>
+              </div>
+              <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+                <p>Academics. Technology. Sustainability. Health and wellness. Civic engagement. This is your opportunity to discover what matters.</p>
+                <button class="btn btn-primary btn-sm btn-orange">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
+              </div>
+            </div>   
           </div>
         </div>
-      </div>
 
-      <div class="col-md-4" >
-        <div class="col-12-md buckets">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="orange">Transfer to WSU</h3>
-            </div>
-          </div> 
-          <div class="row">
-            <div class="col-md-5 col-sm-3 col-xs-4">
-              <%= image_tag 'WSU-2011-Smiling-Student-2-Small.png', class: 'img-responsive'  %>
-            </div>
-            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
-              <p>Academics. Technology. Sustainability. Health and wellness. Civic engagement. This is your opportunity to discover what matters.</p>
-              <button class="btn btn-primary btn-sm btn-orange">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
-            </div>
-          </div>   
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="green">Dancescape 2014</h3>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-md-5 col-sm-3 col-xs-4">
+                <%= image_tag 'dancescape_small.png', class: 'img-responsive'  %>
+              </div>
+              <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+                <p>Get your tickets for the 2014 Dancescape. Opening night is Feb. 13.</p>
+            <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
+              </div>
+            </div>   
+          </div>
         </div>
-      </div>
 
-      <div class="col-md-4" >
-        <div class="col-12-md buckets">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="green">Dancescape 2014</h3>
-            </div>
-          </div> 
-          <div class="row">
-            <div class="col-md-5 col-sm-3 col-xs-4">
-              <%= image_tag 'dancescape_small.png', class: 'img-responsive'  %>
-            </div>
-            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
-              <p>Get your tickets for the 2014 Dancescape. Opening night is Feb. 13.</p>
-          <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
-            </div>
-          </div>   
-        </div>
       </div>
-
     </div>
-  </div>
   </div>
 
   <!-- NEWS -->
   <div class="tab-pane" id="news">
     <div class="container" style="" id="lower-nav">
-    <div class="row" style="padding-top:10px;"><!-- padding:20px 50px 0 50px; -->
-      <div class="col-md-4" >
-        <div class="col-12-md buckets">
-          <h3 class="orange">Regional Emmy-Winner to Visit WSU</h3>
-         
-          
-          <p class="full">Winona State University will host a talk with Regional Emmy-Winning Filmmaker and WSU graduate Olga Lezhepekova at 4 p.m. Monday, Feb. 10, in Somsen ...</p>
-          <button class="btn btn-primary btn-sm btn-orange" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+      <div class="row" style="padding-top:10px;"><!-- padding:20px 50px 0 50px; -->
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <h3 class="orange">Regional Emmy-Winner to Visit WSU</h3>
+            <p class="full">Winona State University will host a talk with Regional Emmy-Winning Filmmaker and WSU graduate Olga Lezhepekova at 4 p.m. Monday, Feb. 10, in Somsen ...</p>
+            <button class="btn btn-primary btn-sm btn-orange" >Read More  <i class="fa fa-chevron-circle-right"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <h3 class="steel">CLASP: “Comparative Student Activism”</h3>
+            <p class="full">The Winona State University CLASP lecture series will host Professor Edward Guernica of the political science department for the presentation ...</p>
+            <button class="btn btn-primary btn-sm btn-steel">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
+          </div>
+        </div>
+
+        <div class="col-md-4" >
+          <div class="col-12-md buckets">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 class="green">Land Of Education</h3>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-md-5 col-sm-3 col-xs-4">
+                <%= image_tag '2010_Athenaeum_Small_button(1).PNG', class: 'img-responsive'  %>
+              </div>
+              <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
+                <p>Join Professor Bruno Borsari and learn how WSU's campus can become a powerful tool for education Feb. 12.</p>
+                <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
+              </div>
+            </div>   
+          </div>
         </div>
       </div>
-      <div class="col-md-4" >
-        <div class="col-12-md buckets">
-          <h3 class="steel">CLASP: “Comparative Student Activism”</h3>
-          <%#= image_tag 'WSU-2011-Smiling-Student-2-Small.png' %>
-          
-          <p class="full">The Winona State University CLASP lecture series will host Professor Edward Guernica of the political science department for the presentation ...</p>
-          <button class="btn btn-primary btn-sm btn-steel">Check it out  <i class="fa fa-chevron-circle-right"></i></button>
-        </div>
-      </div>
-
-
-      <div class="col-md-4" >
-        <div class="col-12-md buckets">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="green">Land Of Education</h3>
-            </div>
-          </div> 
-          <div class="row">
-            <div class="col-md-5 col-sm-3 col-xs-4">
-              <%= image_tag '2010_Athenaeum_Small_button(1).PNG', class: 'img-responsive'  %>
-            </div>
-            <div class="col-md-7 col-sm-9 col-xs-8 no-padding-left">
-              <p>Join Professor Bruno Borsari and learn how WSU's campus can become a powerful tool for education Feb. 12.</p>
-          <button class="btn btn-primary btn-sm btn-green">Learn More <i class="fa fa-chevron-circle-right"></i></button>
-            </div>
-          </div>   
-        </div>
-      </div>
-
-
     </div>
-  </div>
   </div>
 
 
@@ -170,7 +160,6 @@
       </div>
       </div>
 
-
       <div class="col-md-4" >
         <div class="col-12-md buckets">
           <div class="row">
@@ -190,21 +179,9 @@
         </div>
       </div>
 
-
     </div>
   </div>
 
-
-
-
   </div>
 </div>
-
-
-
-
-
-
-
-
 </div>
